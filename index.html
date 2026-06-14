@@ -1,127 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SSI SARL - Sonrpoukri Service International</title>
 
-<meta name="description" content="SSI SARL - Fourniture de matériel informatique, réparation PC, maintenance imprimante, installation réseau, sécurité informatique et vidéosurveillance à Ouagadougou.">
+<meta name="description" content="SSI SARL, votre partenaire informatique à Ouagadougou : vente de matériel, réparation PC, maintenance imprimante, réseaux et vidéosurveillance.">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:#f4f6f9;
-color:#333;
-line-height:1.6;
+    background:#f5f7fa;
+    color:#333;
 }
 
 header{
-background:#003b8e;
-color:white;
-text-align:center;
-padding:50px 20px;
+    background:#003b8e;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:10px;
 }
 
 header h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-header h2{
-font-size:22px;
-margin-bottom:10px;
+    font-size:35px;
 }
 
 header p{
-font-size:18px;
+    margin-top:10px;
+    font-size:18px;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/façade-boutique.jpg.jpeg");
+
+    height:450px;
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 .btn{
-display:inline-block;
-background:#25D366;
-color:white;
-padding:14px 24px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+    font-weight:bold;
 }
 
 section{
-padding:60px 20px;
-max-width:1200px;
-margin:auto;
+    padding:50px 10%;
 }
 
 h2{
-text-align:center;
-margin-bottom:30px;
-color:#003b8e;
+    color:#003b8e;
+    text-align:center;
+    margin-bottom:25px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.presentation{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.services,
+.galerie,
+.avantages{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(250px,1fr));
+
+    gap:20px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    text-align:center;
 }
 
-.card h3{
-margin-bottom:10px;
-color:#003b8e;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+.galerie img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
 .contact{
-background:#003b8e;
-color:white;
-border-radius:15px;
-padding:30px;
+    background:#003b8e;
+    color:white;
 }
 
-.contact p{
-margin-bottom:10px;
+.contact h2{
+    color:white;
+}
+
+.info{
+    text-align:center;
+    line-height:2;
+    font-size:18px;
 }
 
 footer{
-background:#001f4d;
-color:white;
-text-align:center;
-padding:25px;
-margin-top:50px;
-}
-
-.brands{
-text-align:center;
-font-size:18px;
-font-weight:bold;
+    background:#001f4d;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 </style>
@@ -132,31 +144,49 @@ font-weight:bold;
 
 <header>
 
+<img src="images/logo-ssi.png" class="logo">
+
 <h1>SSI SARL</h1>
 
-<h2>SONRPOUKRI SERVICE INTERNATIONAL SARL</h2>
+<p>
+Sonrpoukri Service International SARL
+</p>
 
 <p>
 Vente • Maintenance • Réparation • Réseau • Sécurité • Surveillance
 </p>
 
-<a class="btn" href="https://wa.me/22671282018">
-Commander sur WhatsApp
+</header>
+
+
+<div class="hero">
+
+<h1>
+Votre partenaire informatique de confiance
+</h1>
+
+<p>
+Des solutions professionnelles pour particuliers, entreprises et administrations.
+</p>
+
+<a class="btn"
+href="https://wa.me/22671282018">
+Écrire sur WhatsApp
 </a>
 
-</header>
+</div>
+
 
 <section>
 
-<h2>À PROPOS DE NOUS</h2>
+<h2>Présentation</h2>
 
-<p style="text-align:center; max-width:900px; margin:auto;">
+<p class="presentation">
 
-SSI SARL (Sonrpoukri Service International SARL) est une entreprise spécialisée dans les solutions informatiques professionnelles au Burkina Faso.
+SSI SARL (Sonrpoukri Service International SARL)
+est une entreprise spécialisée dans la fourniture de matériel informatique, la réparation d'ordinateurs, la maintenance d'imprimantes, l'installation de réseaux informatiques, la sécurité des systèmes et l'installation de caméras de surveillance.
 
-Nous proposons la fourniture de matériel informatique, la réparation d'ordinateurs, la maintenance d'imprimantes, l'installation de réseaux informatiques, les solutions de sécurité informatique ainsi que l'installation de caméras de surveillance.
-
-Nous accompagnons particuliers, entreprises, écoles et administrations avec des solutions fiables et un service professionnel.
+Nous proposons des équipements de qualité et un service professionnel adapté aux besoins des particuliers, entreprises et administrations.
 
 </p>
 
@@ -164,161 +194,265 @@ Nous accompagnons particuliers, entreprises, écoles et administrations avec des
 
 <section>
 
-<h2>NOS SERVICES</h2>
+<h2>Nos Services</h2>
 
-<div class="grid">
+<div class="services">
 
 <div class="card">
 <h3>📦 Fourniture de matériel informatique</h3>
-<p>Ordinateurs, imprimantes, accessoires et équipements professionnels.</p>
+<p>
+Ordinateurs portables et de bureau, imprimantes,
+accessoires, composants et équipements informatiques professionnels.
+</p>
 </div>
 
 <div class="card">
 <h3>💻 Réparation PC</h3>
-<p>Diagnostic, dépannage et maintenance informatique.</p>
+<p>
+Diagnostic, dépannage, installation de systèmes,
+mise à jour et remplacement de composants.
+</p>
 </div>
 
 <div class="card">
 <h3>🖨️ Maintenance imprimante</h3>
-<p>Réparation et entretien de toutes marques.</p>
+<p>
+Réparation, entretien et installation d'imprimantes
+HP, Epson, Canon et plusieurs autres marques.
+</p>
 </div>
 
 <div class="card">
 <h3>🌐 Installation réseau</h3>
-<p>Wi-Fi, câblage, routeurs et infrastructures réseau.</p>
+<p>
+Configuration Wi-Fi, réseaux d'entreprise,
+partage d'imprimantes et solutions réseau.
+</p>
 </div>
 
 <div class="card">
-<h3>🛡️ Antivirus & Sécurité</h3>
-<p>Protection et sécurisation de vos systèmes informatiques.</p>
+<h3>🛡️ Antivirus & sécurité informatique</h3>
+<p>
+Protection des données, suppression de virus
+et sécurisation des ordinateurs.
+</p>
 </div>
 
 <div class="card">
 <h3>📹 Caméras de surveillance</h3>
-<p>Installation et maintenance de systèmes de vidéosurveillance.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>POURQUOI NOUS CHOISIR ?</h2>
-
-<div class="grid">
-
-<div class="card">✅ Matériel de qualité</div>
-
-<div class="card">✅ Produits testés avant livraison</div>
-
-<div class="card">✅ Assistance rapide</div>
-
-<div class="card">✅ Service après-vente</div>
-
-<div class="card">✅ Équipe professionnelle</div>
-
-<div class="card">✅ Solutions adaptées aux particuliers et entreprises</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>GALERIE PHOTOS</h2>
-
-<p style="text-align:center;margin-bottom:25px;">
-Ajoute ici tes photos dans le dossier images.
+<p>
+Installation, configuration et maintenance
+de systèmes de vidéosurveillance.
 </p>
-
-<div class="gallery">
-
-<img src="images/logo-ssi.png" alt="SSI SARL">
-
-<img src="images/facade-boutique.jpg" alt="Boutique">
-
-<img src="images/magasin.jpg" alt="Magasin">
-
-<img src="images/macbook.jpg" alt="MacBook">
-
-<img src="images/imprimante.jpg" alt="Imprimante">
-
-<img src="images/projecteur.jpg" alt="Projecteur">
-
-<img src="images/camera.jpg" alt="Caméra">
-
-<img src="images/gaming.jpg" alt="Gaming">
-
-</div>
-
-</section>
-
-<section>
-
-<h2>TÉMOIGNAGES</h2>
-
-<div class="grid">
-
-<div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-Service rapide et matériel de qualité.
-</div>
-
-<div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-Installation réseau et caméras réalisée avec professionnalisme.
-</div>
-
-<div class="card">
-⭐⭐⭐⭐⭐
-<br><br>
-Excellent accompagnement et matériel fiable.
 </div>
 
 </div>
 
 </section>
 
+
 <section>
 
-<div class="contact">
+<h2>Pourquoi choisir SSI SARL ?</h2>
 
-<h2 style="color:white;">CONTACTS</h2>
+<div class="avantages">
 
-<p>📱 WhatsApp principal : 71 28 20 18</p>
+<div class="card">
+✅ Matériel de qualité garanti
+</div>
 
-<p>📱 WhatsApp : 75 30 18 12</p>
+<div class="card">
+✅ Équipements testés avant livraison
+</div>
 
-<p>☎ Téléphone : 78 60 36 44</p>
+<div class="card">
+✅ Assistance technique rapide
+</div>
 
-<p>☎ Téléphone : 76 55 17 48</p>
+<div class="card">
+✅ Service après-vente assuré
+</div>
 
-<p>📧 Email : Sonrpoukriserviceinter@gmail.com</p>
+<div class="card">
+✅ Personnel qualifié et professionnel
+</div>
 
-<p>📍 Nagrin, vers l'Hôpital Blaise COMPAORÉ, Ouagadougou</p>
+<div class="card">
+✅ Solutions adaptées aux particuliers et entreprises
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Notre Galerie</h2>
+
+<div class="galerie">
+
+<img src="images/interieur-boutique.jpg.jpeg" alt="Intérieur de la boutique">
+
+<img src="images/atelier.jpg.jpeg" alt="Atelier de réparation">
+
+<img src="images/cam-surveil.jpg.jpeg" alt="Caméras de surveillance">
+
+<img src="images/projecteur-epson.jpg.jpeg" alt="Vidéoprojecteur Epson">
+
+<img src="images/impri-hp.jpg.jpeg" alt="Imprimante HP">
+
+<img src="images/ecotank.jpg.jpeg" alt="Imprimante Epson EcoTank">
+
+<img src="images/macbook.jpg.jpeg" alt="MacBook">
+
+<img src="images/macbook-affiche.jpg.jpeg" alt="MacBook">
+
+<img src="images/ps4.jpg.jpeg" alt="PlayStation 4">
+
+<img src="images/hpelitebook-i78thtactile.jpg.jpeg" alt="HP EliteBook tactile">
+
+<img src="images/ideapad-flex5.jpg.jpeg" alt="Lenovo IdeaPad Flex 5">
+
+<img src="images/legion5.jpg.jpeg" alt="Lenovo Legion 5 Gaming">
+
+<img src="images/lenovo-p50.jpg.jpeg" alt="Lenovo ThinkPad P50">
+
+<img src="images/nvidia-carte.jpg.jpeg" alt="Carte graphique Nvidia">
+
+<img src="images/souris-hpw10.jpg.jpeg" alt="Souris HP">
+
+<img src="images/clavier-gamer.jpg.jpeg" alt="Clavier gamer">
+
+<img src="images/airpodpro.jpg.jpeg" alt="AirPods Pro">
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Nos produits disponibles</h2>
+
+<div class="services">
+
+<div class="card">
+💻 <br><br>
+Ordinateurs portables HP, Dell, Lenovo, MacBook et Gaming
+</div>
+
+<div class="card">
+🖨️ <br><br>
+Imprimantes HP, Epson EcoTank et accessoires d'impression
+</div>
+
+<div class="card">
+🎮 <br><br>
+Accessoires gaming, PS4, claviers, souris et périphériques
+</div>
+
+<div class="card">
+📽️ <br><br>
+Vidéoprojecteurs Epson et équipements multimédias
+</div>
+
+<div class="card">
+🎥 <br><br>
+Caméras de surveillance et systèmes de sécurité
+</div>
+
+<div class="card">
+🧩 <br><br>
+Pièces informatiques, cartes graphiques et composants
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Témoignages clients</h2>
+
+<div class="services">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+"Service rapide, accueil professionnel et matériel de qualité."
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+"Installation de réseau et de caméras réalisée avec sérieux."
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<br><br>
+"Très satisfait de la réparation de mon ordinateur."
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contacts & Informations</h2>
+
+<div class="info">
 
 <p>
-🕒 Horaires :
-<br>
-Lundi - Samedi : 08h00 - 20h00
-<br>
+📱 WhatsApp principal :
+<strong>71 28 20 18</strong>
+</p>
+
+<p>
+📱 WhatsApp secondaire :
+<strong>75 30 18 12</strong>
+</p>
+
+<p>
+☎ Téléphone :
+<strong>73 15 98 40</strong>
+</p>
+
+<p>
+☎ Téléphone :
+<strong>76 55 17 48</strong>
+</p>
+
+<p>
+📧 Email :
+<strong>Sonrpoukriserviceinter@gmail.com</strong>
+</p>
+
+<p>
+💰 Orange Money :
+<strong>76 55 17 48</strong>
+</p
+
+<p>
+🔵 Moov Money :
+<strong>71 28 20 18</strong> 
+</p
+
+<p>
+📍 Localisation : Nagrin, vers l'Hôpital Blaise COMPAORÉ, Ouagadougou
+</p
+
+<p>
+🕒 Horaires : Lundi - Samedi : 8h00 - 20h00  
 Dimanche : Fermé
-</p>
+</p
 
 <p>
-💰 Orange Money : 76 55 17 48
-<br>
-💰 Moov Money : 71 28 20 18
-</p>
-
-<p>
-<a class="btn" href="https://maps.app.goo.gl/KY5kiBoammZoLSKQ7?g_st=iw">
-Voir notre localisation
-</a>
-</p>
+<a class="btn" href="https://maps.app.goo.gl/KY5kiBoammZoLSKQ7?g_st=iw">Voir notre localisation sur Google Maps</a>
+</p
 
 </div>
 
@@ -326,21 +460,26 @@ Voir notre localisation
 
 <section>
 
-<h2>MARQUES PRISES EN CHARGE</h2>
+<h2>Marques prises en charge</h2>
 
-<div class="brands">
-HP • Dell • Lenovo • Apple • Epson • Asus • Acer • MSI • Canon
-</div>
+<div class="services">
 
-</section>
+<div class="card">HP</div>
+<div class="card">Dell</div>
+<div class="card">Lenovo</div>
+<div class="card">Apple</div>
+<div class="card">Epson</div>
+<div class="card">Canon</div>
+<div class="card">Asus</div>
+<div class="card">MSI</div>  
+</div> 
+
+</section> 
 
 <footer>
-
-<p>
-© 2026 SSI SARL - Sonrpoukri Service International SARL
-</p>
-
+© 2026 SSI SARL - Sonrpoukri Service International SARL 
 </footer>
 
 </body>
 </html>
+
